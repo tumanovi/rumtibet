@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.min.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Важно чтобы стайл цсс был всегда внизу, 
+   чтобы он подгрпузил шрифты и тд, о что выше -->
+  <title>РумТибет</title>
+  <!-- Далее анализируем повторяющие элементы, 
+   чтобы сделать их по БЭМ -->
+  <!-- в фигме для активации линейки - Шивт ар -->
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="overlay overlay--show"></div>
+    <header class="header">
+      <a class="heder__logo1100 logo" href="#">
+        <img src="images/logo.svg" alt="logo">
+      </a>
+      <a href="#" class="burger burger--follow">
+        <span></span>
+      </a>
+      <div class="conteiner">
+        <div class="heder__top heder__top-open">
+
+          <div class="heder__top-inner">
+            <a class="heder__logo logo" href="#">
+              <img src="images/logo.svg" alt="logo">
+            </a>
+            <div class="heder__nav">
+              <ul class="heder__nav-list">
+                <li class="heder__nav-item heder__nav-item-burger"><a href="" class="heder__nav-link">Главная</a></li>
+                <li class="heder__nav-item heder__nav-item-burgernone"><a href="" class="heder__nav-link">Про гида</a>
+                </li>
+                <li class="heder__nav-item "><a href="" class="heder__nav-link">Программа тура</a></li>
+                <li class="heder__nav-item"><a href="" class="heder__nav-link">Стоимость </a></li>
+                <li class="heder__nav-item"><a href="" class="heder__nav-link">Блог</a></li>
+                <li class="heder__nav-item"><a href="" class="heder__nav-link">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="heder__user-nav heder__nav-item-burger">
+              <a class="heder__top-button button_con" href="#">Консультация</a>
+
+              <a href="#" class="heder__login-log">Логин</a> / <a href="#" class="heder__login">Регистрация</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="heder__body">
+          <h1 class="h1_title">Насладись прогулкой в горах с командой единомышленников</h1>
+
+          <div class="heder__body-form">
+
+            <form class="form" id="hikeForm">
+              <div class="form__row">
+                <div class="form__field-group">
+
+                  <select class="form__select" id="location" name="location" required>
+                    <option class="form__option" value="">Локация для тура</option>
+                    <option class="form__option" value="altai">Алтайские горы</option>
+                    <option class="form__option" value="caucasus">Кавказские горы</option>
+                    <option class="form__option" value="baikal">Байкал</option>
+                    <option class="form__option" value="karelia">Карелия</option>
+                    <option class="form__option" value="kamchatka">Камчатка</option>
+                  </select>
+                  <label class="form__label" for="location">Выберите из списка</label>
+                </div>
+
+                <div class="form__field-group">
+
+                  <input class="form__input" type="date" id="date" name="date" required min="2024-01-01">
+                  <label class="form__label" for="date">укажите диапазон</label>
+                </div>
+                <div class="form__field-group">
+
+                  <input class="form__input" type="number" id="participants" name="participants" required min="4"
+                    max="20" value="4">
+                  <label class="form__label" for="participants">*минимум 4</label>
+                </div>
+                <div class="form__field-group1">
+                  <button type="submit" class="button2" id="submitBtn">Найти программу</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </header>
+    <main class="main">
+      <section class="about">
+        <div class="conteiner">
+          <div class="about__inner">
+            <div class="about__img">
+              <img src="../images/about.svg" alt="">
+            </div>
+            <div class="about__img1">
+              <img src="../images/aboutphone.png" alt="">
+            </div>
+            <div class="about__content">
+              <div class="about__heading">
+                <p class="heading__subtitle subtitle">о нашем походе</p>
+                <h2 class="heading__title title">Исследуйте все горные массивы мира вместе с нами</h2>
+              </div>
+              <p class="about__text">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более
+                двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния,
+                взял одно из самых странных слов в Lorem Ipsum, "consectetur"и занялся его поисками в классической
+                латинской литературе.</p>
+              <a class="abot-button button" href="#">Программа тура</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="best">
+        <div class="conteiner">
+          <div class="best__inner">
+            <div class="best__content">
+              <div class="best__heading">
+                <p class="best__subtitle subtitle">наше предложение</p>
+                <h2 class="best__title title">Лучшие программы для тебя</h2>
+              </div>
+              <p class="best__text">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более
+                двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа.</p>
+              <div class="best__list">
+                <div class="best__row">
+                  <div class="best__imgicon"><img src="/images/best1.svg" alt=""></div>
+                  <div class="best__list-item">
+                    <h4 class="h5">Опытный гид</h4>
+                    <p class="best__list-text">Для современного мира базовый вектор развития предполагает независимые
+                      способы реализации соответствующих условий активизации.</p>
+                  </div>
+                </div>
+                <div class="best__row">
+                  <div class="best__imgicon"><img src="/images/best2.svg" alt=""></div>
+                  <div class="best__list-item">
+                    <h5 class="h5">Безопасный поход</h5>
+                    <p class="best__list-text">Для современного мира базовый вектор развития предполагает независимые
+                      способы реализации соответствующих условий активизации.</p>
+                  </div>
+                </div>
+                <div class="best__row">
+                  <div class="best__imgicon"><img src="/images/best3.png" alt=""></div>
+                  <div class="best__list-item">
+                    <h5 class="h5">Лояльные цены</h5>
+                    <p class="best__list-text">Для современного мира базовый вектор развития предполагает независимые
+                      способы реализации соответствующих условий активизации.</p>
+                  </div>
+                </div>
+              </div>
+              <a class="best-button button" href="#">Стоимость программ</a>
+            </div>
+            <div class="best__img">
+              <img src="../images/best.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="famos">
+        <div class="conteiner">
+          <div class="famos__inner">
+            <div class="famos__heading">
+              <p class="famos__subtitle subtitle">по версии отдыхающих</p>
+              <h2 class="famos__title title">Популярные направления</h2>
+            </div>
+
+            <!-- Контейнер для слайдера -->
+            <div class="famos__slider-container">
+              <!-- Стрелки -->
+              <button class="slider-arrow prev">‹</button>
+              <button class="slider-arrow next">›</button>
+
+              <!-- Слайдер -->
+              <div class="famos__content">
+                <div class="famos__img">
+                  <a href="#"><img src="/images/popular_tour.png" alt="Направление 1"></a>
+                </div>
+                <div class="famos__img">
+                  <a href="#"><img src="/images/popular_tour2.png" alt="Направление 2"></a>
+                </div>
+                <div class="famos__img">
+                  <a href="#"><img src="/images/popular_tour3.png" alt="Направление 3"></a>
+                </div>
+                <div class="famos__img">
+                  <a href="#"><img src="/images/popular_tour.png" alt="Направление 4"></a>
+                </div>
+                <div class="famos__img">
+                  <a href="#"><img src="/images/popular_tour2.png" alt="Направление 5"></a>
+                </div>
+                <div class="famos__img">
+                  <a href="#"><img src="/images/popular_tour3.png" alt="Направление 6"></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Индикаторы -->
+            <div class="slider-dots">
+            </div>
+
+            <a class="famos-button button" href="#">Рейтинг направлений</a>
+          </div>
+        </div>
+      </section>
+    <section class="abouttravel">
+    <div class="conteiner">
+        <div class="abouttravel__inner">
+            <div class="abouttravel__heading">
+                <p class="abouttravel__subtitle subtitle">делимся впечатлениями</p>
+                <h2 class="abouttravel__title title">Блог о путешествиях</h2>
+            </div>
+
+            <!-- Мобильный слайдер (только до 670px) -->
+            <div class="abouttravel__slider-container">
+                <div class="abouttravel__slider">
+                    <!-- Слайды будут созданы JavaScript -->
+                </div>
+                <div class="slider-dots abouttravel-dots"></div>
+            </div>
+
+            <!-- Оригинальный десктопный контент (НЕ ТРОГАЕМ) -->
+            <div class="abouttravel__content">
+                <div class="abouttravel__row">
+                    <div class="abouttravel__1wrap">
+                        <div class="abouttravel__1">
+                            <div class="abouttravel__img"><img src="/images/blogtravel.png" alt=""></div>
+                            <div class="abouttravel__text">
+                                <h3 class="abouttravel__h3">Красивая Италя, какая она в реальности?</h3>
+                                <p class="abouttravel__p">Для современного мира базовый вектор развития предполагает независимые
+                                    способы реализации соответствующих условий активизации.</p>
+                                <div class="abouttravel__dl">
+                                    <p class="abouttravel__date">01/04/2023</p>
+                                    <a href="#" class="abouttravel__link">читать статью</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="abouttravel__1wrap">
+                        <div class="abouttravel__1">
+                            <div class="abouttravel__img"><img src="/images/blogtravel2.png" alt=""></div>
+                            <div class="abouttravel__text">
+                                <h3 class="abouttravel__h3">Долой сомнения! Весь мир открыт для вас!</h3>
+                                <p class="abouttravel__p">Для современного мира базовый вектор развития предполагает независимые
+                                    способы реализации соответствующих условий активизации ... независимые способы реализации
+                                    соответствующих услов...</p>
+                                <div class="abouttravel__dl">
+                                    <p class="abouttravel__date">01/04/2023</p>
+                                    <a href="#" class="abouttravel__link">читать статью</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="abouttravel__row">
+                    <div class="abouttravel__1wrap">
+                        <div class="abouttravel__1">
+                            <div class="abouttravel__img"><img src="/images/blogtravel3.png" alt=""></div>
+                            <div class="abouttravel__text">
+                                <h3 class="abouttravel__h3">Как подготовиться к путешествию в одиночку? </h3>
+                                <p class="abouttravel__p">Для современного мира базовый вектор развития предполагает.</p>
+                                <div class="abouttravel__dl">
+                                    <p class="abouttravel__date">01/04/2023</p>
+                                    <a href="#" class="abouttravel__link">читать статью</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="abouttravel__1wrap">
+                        <div class="abouttravel__1">
+                            <div class="abouttravel__img"><img src="/images/blogtravel4.png" alt=""></div>
+                            <div class="abouttravel__text">
+                                <h3 class="abouttravel__h3">Индия ... летим?</h3>
+                                <p class="abouttravel__p">Для современного мира базовый.</p>
+                                <div class="abouttravel__dl">
+                                    <p class="abouttravel__date">01/04/2023</p>
+                                    <a href="#" class="abouttravel__link">читать статью</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="abouttravel__row"> <a class="abouttravel-button button" href="#">Рейтинг направлений</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+      <section class="sharing">
+    <div class="conteiner">
+        <div class="sharing__inner">
+            <div class="sharing__heading">
+                <p class="sharing__subtitle subtitle">фото-отчет</p>
+                <h2 class="sharing__title title">Делимся впечатлениями</h2>
+            </div>
+            
+            <!-- Слайдер для мобильных -->
+            <div class="sharing__slider-container">
+                <div class="sharing__slider">
+                    <!-- Слайды будут вставлены через JS -->
+                </div>
+                <div class="sharing-dots"></div>
+
+            </div>
+            
+            <!-- Оригинальный контент (десктоп) -->
+            <div class="sharing__content">
+                <div class="sharing__imgrow">
+                    <a href="/images/sharre1.png" data-fancybox="gallery">
+                        <img src="/images/sharre1.png" alt="">
+                    </a>
+                    <a href="/images/sharre2.png" data-fancybox="gallery">
+                        <img src="/images/sharre2.png" alt="">
+                    </a>
+                    <a href="/images/sharre3.png" data-fancybox="gallery">
+                        <img src="/images/sharre3.png" alt="">
+                    </a>
+                </div>
+                <div class="sharing__imgrow">
+                    <a href="/images/sharre4.png" data-fancybox="gallery">
+                        <img class="sharing__img" src="/images/sharre4.png" alt="">
+                    </a>
+                    <a href="/images/sharre5.png" data-fancybox="gallery">
+                        <img src="/images/sharre5.png" alt="">
+                    </a>
+                    <a href="/images/sharre6.png" data-fancybox="gallery">
+                        <img src="/images/sharre6.png" alt="">
+                    </a>
+                </div>
+                <div class="sharing__imgrow">
+                    <a class="sharing-button button" href="#">Наш pinterest</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+      <section class="ras">
+        <div class="conteiner">
+          <div class="ras__inner">
+            <div class="ras__1">
+              <div class="ras__1-title">
+                <p class="ras__subtitle subtitle">актуально</p>
+              </div>
+
+              <h3 class="ras__title title">Получайте полезные </br>рассылки о путешествиях</h3>
+              <h3 class="ras__title-mobile title">Делимся впечатлениями</h3>
+            </div>
+            <div class="ras__2">
+              <h5 class="ras__h5">Введите e-mail адрес</h5>
+              <div class="ras__mail">
+                <div class="ras__mail-form">
+                  <form action="#" class="ras__mail-form1">
+                    <input class="ras__mail-form1" type="email" name="email" placeholder="        name@domain.com"
+                      required>
+                  </form>
+                </div>
+
+                <a class="ras-mail-button button" href="#">Подписаться на новости</a>
+              </div>
+
+
+              <div class="ras__text">
+                подписываясь на новости, вы автоматически соглашаетесь с <a href="#" class="ras__mail-us">условиями
+                  обработки персональных данных</a> и
+                <a href="#" class="ras__mail-us">правилами рекламных рассылок</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="conteiner">
+          <div class="footer__top-inner">
+            <div class="footer__top-1">
+              <div class="footer__top-11">
+                <h3 class="footer__top-h">Компания «РумТибет»</h3>
+                <p class="footer__top-text">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть
+                  более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney.</p>
+                <a class="footer__top-email" href="#">info@domain.com</a>
+                <a class="footer__top-email" href="#">+7 (123) 456-78-90</a>
+              </div>
+              <div class="footer__top-social">
+                <a href="#"><img src="/images/social/ic_baseline-telegram.svg" alt=""></a>
+                <a href="#"><img src="/images/social/entypo-social_vk-with-circle.svg" alt=""></a>
+                <a href="#"><img src="/images/social/mdi_pinterest.svg" alt=""></a>
+                <a href="#"><img src="/images/social/mdi_skype.svg" alt=""></a>
+              </div>
+            </div>
+            <div class="footer__top-1">
+              <h3 class="footer__top-h">Наши услуги</h3>
+              <ul class="footer__top-list">
+                <li class="footer__top-item"> Прогулки в горы летом</li>
+                <li class="footer__top-item">Зимние походы в горы</li>
+                <li class="footer__top-item">Посещение храмов в горах</li>
+                <li class="footer__top-item">Экстремальные виды туризма</li>
+                <li class="footer__top-item">Походы в джунглях Амазонии</li>
+                <li class="footer__top-item">Поездка в Африку</li>
+              </ul>
+            </div>
+            <div class="footer__top-1">
+              <h3 class="footer__top-h">Важно для путешествий</h3>
+              <ul class="footer__top-list">
+                <li class="footer__top-item">Как собрать в долгий поход?</li>
+                <li class="footer__top-item">Жизненно важные предметы для похода</li>
+                <li class="footer__top-item">Медицинская страховка, гарантии безопасности</li>
+                <li class="footer__top-item">Если вы врач - загляните сюда</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="conteiner">
+          <div class="footer__bottom-line">
+            <p class="footer__bottom-text">ИП Константинопольский К.К., 2023</p>
+            <a href="#" class="footer__bottom-text2">Политика обработки персональных данных</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+</body>
+<!-- Скрипты подключаются в самом конце, т к браузер сначала прочитает визуал и если js файл потребует загрузки
+ Пользователь не будет ее ждать. -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.min.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>
