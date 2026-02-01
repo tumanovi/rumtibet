@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('///fonts/NotoSansKR-ExtraBold.eot');
+    src: url('../fonts/NotoSansKR-ExtraBold.eot') format('embedded-opentype'),
+        url('../fonts/NotoSansKR-ExtraBold.woff2') format('woff2'),
+        url('../fonts/NotoSansKR-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('///fonts/NotoSansKR-Bold.eot');
+    src: url('../fonts/NotoSansKR-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NotoSansKR-Bold.woff2') format('woff2'),
+        url('../fonts/NotoSansKR-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('../fonts/NotoSansKR-Regular.eot');
+    src: url('../fonts/NotoSansKR-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NotoSansKR-Regular.woff2') format('woff2'),
+        url('../fonts/NotoSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('../fonts/NotoSansKR-SemiBold.eot');
+    src: url('../fonts/NotoSansKR-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NotoSansKR-SemiBold.woff2') format('woff2'),
+        url('../fonts/NotoSansKR-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
