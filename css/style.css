@@ -1610,11 +1610,11 @@ html, body {
 /****************************************************************max-width: 850px****************************************************/
 @media (max-width: 850px) {
     .h1_title {
-        margin-left: 16px;
+        margin-left: 25px;
     }
 
     .form__field-group1 {
-        padding-left: 0;
+        padding-left: 10px;
     }
 
     .heder__body-form {
@@ -1690,11 +1690,20 @@ html, body {
     }
 }
 @media (max-width: 510px) {
+    .heder__body {
+    position: absolute;
+    bottom: 120px;
+    max-width: 1180px;
+    padding: 0;
+    margin: 0 auto;
+
+}
     .h1_title {
         font-weight: 700;
 font-size: 28px;
 line-height: 150%;
 color: #fdfdfd;
+padding-bottom: 66px;
     }
     .subtitle  {
         font-weight: 400;
